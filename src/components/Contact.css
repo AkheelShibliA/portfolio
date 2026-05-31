@@ -12,6 +12,9 @@
   background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(0,194,255,0.05), transparent);
   pointer-events: none;
 }
+.section-label::after {
+  display: none;
+}
 .contact-sub {
   font-family: 'DM Mono', monospace;
   font-size: 0.8rem;
