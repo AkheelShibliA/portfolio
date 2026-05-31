@@ -5,7 +5,7 @@
   justify-content: center;
   padding: 120px 48px 80px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 .hero-grid-bg {
   position: absolute; inset: 0;
@@ -13,6 +13,8 @@
     linear-gradient(rgba(0,194,255,0.04) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0,194,255,0.04) 1px, transparent 1px);
   background-size: 60px 60px;
+  overflow: hidden;
+  border-radius: inherit;
   mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, black, transparent);
 }
 .hero-glow {
@@ -22,6 +24,8 @@
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   pointer-events: none;
+  overflow: hidden;
+  border-radius: inherit;
 }
 .hero-eyebrow {
   font-family: 'DM Mono', monospace;
@@ -34,9 +38,9 @@
   animation: fadeUp 0.8s 0.2s forwards;
 }
 .hero-name {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Manrope', sans-serif;
   font-size: clamp(3.5rem, 9vw, 8rem);
-  line-height: 0.95;
+  line-height: 1.05;
   font-weight: 400;
   margin-bottom: 8px;
   opacity: 0;
@@ -44,7 +48,7 @@
 }
 .hero-name .italic { font-style: italic; color: var(--accent); }
 .hero-tagline {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Manrope', sans-serif;
   font-size: clamp(1rem, 2.5vw, 1.6rem);
   color: var(--muted);
   font-style: italic;
@@ -109,7 +113,7 @@
 }
 .stat { text-align: right; }
 .stat-num {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Manrope', sans-serif;
   font-size: 2rem;
   color: var(--accent);
   line-height: 1;

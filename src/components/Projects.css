@@ -7,7 +7,7 @@
   padding: 36px;
   transition: all 0.3s;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 .project-card::after {
   content: '';
@@ -21,7 +21,7 @@
 .project-card.visible { opacity: 1; transform: translateY(0); }
 
 .project-num {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Manrope', sans-serif;
   font-size: 3rem;
   color: var(--border);
   line-height: 1;

@@ -95,8 +95,9 @@ body::before {
   text-decoration: none;
   display: inline-block;
   transition: all 0.2s;
-  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
-  cursor: none;
+   padding: 14px 38px 14px 32px; /* extra right padding for the angled cut */
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+ cursor: none;
 }
 .btn-primary:hover { background: #33CEFF; transform: translateY(-2px); }
 
@@ -115,6 +116,15 @@ body::before {
   transition: all 0.2s;
   cursor: none;
 }
+/* Prevent overflow:hidden from clipping text in sections */
+section, .about-card, .edu-card, .project-card {
+  overflow: visible !important;
+}
+/* Only keep it on purely decorative background elements */
+.hero-grid-bg, .hero-glow, .about-card::before, .edu-card::before {
+  overflow: hidden;
+}
+
 .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
 
 @media (max-width: 768px) {
