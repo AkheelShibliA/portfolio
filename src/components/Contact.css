@@ -1,0 +1,52 @@
+.contact-section {
+  text-align: center;
+  padding: 120px 48px;
+  position: relative;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.contact-section::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(0,194,255,0.05), transparent);
+  pointer-events: none;
+}
+.contact-sub {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--muted);
+  max-width: 500px;
+  margin: 0 auto 48px;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+}
+.contact-links { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; }
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 24px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-family: 'DM Mono', monospace;
+  letter-spacing: 0.08em;
+  transition: all 0.2s;
+}
+.contact-link:hover { border-color: var(--accent); color: var(--accent); background: rgba(0,194,255,0.05); }
+.contact-email {
+  font-family: 'DM Mono', monospace;
+  font-size: 1rem;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0,194,255,0.3);
+  padding-bottom: 4px;
+  transition: border-color 0.2s;
+}
+.contact-email:hover { border-color: var(--accent); }
+
+@media (max-width: 768px) {
+  .contact-section { padding: 80px 24px; }
+}
