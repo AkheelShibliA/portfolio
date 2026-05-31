@@ -4,7 +4,7 @@ import './Contact.css';
 export default function Contact() {
   return (
     <section className="contact-section" id="contact">
-      <div className="section-label" style={{ justifyContent: 'center' }}>06 · Contact</div>
+      <div className="section-label" style={{ justifyContent: 'center' }}>06 · Contact:9653715853</div>
       <h2 className="section-title" style={{ marginBottom: '24px' }}>
         Let's build something <em>great</em>
       </h2>
